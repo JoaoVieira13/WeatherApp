@@ -38,10 +38,16 @@ cd weather-cli
 ```
 
 ### 2. Create virtual environment (recommended)
-bash
+
+```bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+
+# macOS/Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
 
 ### 3. Install dependencies
 
@@ -52,6 +58,10 @@ pip install -r requirements.txt
 ---
 
 ## ▶️ Usage
+
+The application can be used in two different modes: **CLI mode** or **Web interface mode**.
+
+### 🖥️ CLI Mode (default)
 
 Run the application:
 
@@ -66,7 +76,25 @@ Enter latitude: 41.15
 Enter longitude: -8.61
 ```
 
-### Example Output
+### 🌐 Web Interface Mode
+
+Run the application in web mode:
+
+```bash
+python main.py --web
+```
+
+Then open your browser and access:
+
+```
+http://127.0.0.1:5000
+```
+
+Enter the coordinates in the web form to get the weather information.
+
+---
+
+### Example Output (CLI)
 
 ```
 --- Current Weather ---
@@ -81,11 +109,6 @@ Condition: Partly cloudy
 
 * Python 3.14+
 * requests
-
-Example `requirements.txt`:
-
-```
-requests==2.33.1
-```
+* flask
 
 ---
