@@ -1,0 +1,91 @@
+# 🌦️ Weather CLI Application
+
+A simple and clean command-line application built in Python that fetches real-time weather data using the Open-Meteo API.
+
+---
+
+## 🚀 Overview
+
+This project demonstrates how to build a modular and maintainable CLI application that:
+
+* Accepts user-provided geographic coordinates
+* Fetches real-time weather data from a public API
+* Processes and displays key weather information in a clear format
+
+---
+
+## ✨ Features
+
+* Input latitude and longitude via CLI
+* Fetch current weather data from Open-Meteo API
+* Display:
+
+  * Temperature (°C)
+  * Wind Speed (km/h)
+  * Weather Condition (human-readable)
+* Error handling for invalid inputs and API failures
+* Modular code structure (services, utils, CLI)
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/weather-cli.git
+cd weather-cli
+```
+
+### 2. Create virtual environment (recommended)
+bash
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+Run the application:
+
+```bash
+python main.py
+```
+
+Then input coordinates when prompted:
+
+```
+Enter latitude: 41.15
+Enter longitude: -8.61
+```
+
+### Example Output
+
+```
+--- Current Weather ---
+Temperature: 21.3°C
+Wind Speed: 12.5 km/h
+Condition: Partly cloudy
+```
+
+---
+
+## 📦 Requirements
+
+* Python 3.14+
+* requests
+
+Example `requirements.txt`:
+
+```
+requests==2.33.1
+```
+
+---
